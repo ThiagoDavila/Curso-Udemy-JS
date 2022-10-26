@@ -1,11 +1,17 @@
 //capturar evento de submit do formulario
-const peso = document.querySelector('peso')
-const altura = document.querySelector('altura')
+const form = document.querySelector('#form')
 
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+    console.log('Evento previnido')
 
-peso = parseFloat (peso)
-altura = parseFloat (altura)
+})
+function setResultado (msg){
+    const resultado = document.querySelector('#resultado')
+    resultado.innerHTML = ''
+    const p = document.createElement('p')
+    p.innerHTML = 'qualquer coisa'
+    resultado.appendChild(p)
 
-let resultado = peso / altura * 2
-
+}
 
