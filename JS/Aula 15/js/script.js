@@ -16,7 +16,7 @@ function meuEscopo(){
     const peso = form.querySelector('.peso')
     const altura = form.querySelector('.altura')
 
-    pessoas.push({  //array pessoas adiciona some,sobrenome,peso e idade
+    pessoas.push({  //array pessoas adiciona nome,sobrenome,peso e idade
        nome : nome.value,
        sobrenome: sobrenome.value,
        peso: peso.value,
